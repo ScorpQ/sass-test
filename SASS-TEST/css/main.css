@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  height: 75px;
+  background-color: #f7f7f7;
+  z-index: 10;
+  position: relative;
+}
+.nav-logo {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #222121;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.nav-bars {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .nav-bars {
+    opacity: 1;
+    color: #222121;
+    position: absolute;
+    top: 1rem;
+    right: 50px;
+    font-size: 2rem;
+  }
+}
+.nav-menu {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .nav-menu {
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+  }
+}
+.nav-menu-link {
+  color: #222121;
+  text-decoration: none;
+}
+.nav-menu-link:hover {
+  color: #00cc66;
+}
+.nav-menu-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #222121;
+  background-color: #00cc66;
+  text-decoration: none;
+}
+.nav-menu-button:hover {
+  color: #f7f7f7;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+.hero-right {
+  text-align: center;
+  margin-top: 1rem;
+}
+.hero-right img {
+  width: 100%;
+}
+.hero-left {
+  width: 100%;
+}
+.hero-left h1 {
+  font-size: 4rem;
+  color: #00cc66;
+}
+.hero-left h2 {
+  font-size: 3rem;
+  color: #222121;
+}
+.hero-left p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-left button {
+  font-size: 1rem;
+  background-color: #00cc66;
+  padding: 1rem;
+}/*# sourceMappingURL=main.css.map */

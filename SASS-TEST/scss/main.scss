@@ -1,0 +1,86 @@
+@import 'config';
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding: 0.5rem 1rem;
+    height: 75px;
+
+    background-color: $light;
+    z-index: 10;
+    position: relative;
+
+    &-logo{
+        text-decoration: none;
+        font-size: 2rem;
+        color: $dark;
+        margin-left: 50px;
+
+        @include center-horizon;
+    }
+
+    &-bars{
+        opacity: 0;   
+        @include tablet;
+    }
+
+    &-menu{
+        opacity: 0;
+        @include center-horizon;
+        @include screen;
+        &-link{
+            color: $dark;
+            text-decoration: none;
+            &:hover{
+                color: $lime;
+            }
+        }
+        &-button{
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: $dark;
+            background-color: $lime;
+            text-decoration: none;
+            &:hover{
+                color:$light;
+            }
+        }
+    }
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    @include hero-tablet;
+    &-right{
+        text-align: center;
+        margin-top:1rem;
+        img{
+            width: 100%;
+        }
+    }
+    &-left{
+        width: 100%;
+        h1{
+            font-size: 4rem;
+            color: $lime; 
+        }
+        h2{
+            font-size: 3rem;
+            color: $dark;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        button{
+            font-size: 1rem;
+            background-color: $lime;
+            padding: 1rem;
+        }
+    }
+}
